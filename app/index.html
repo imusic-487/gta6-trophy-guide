@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Atlas — GTA 6 Trophy Guide &amp; Tracker</title>
+<meta name="description" content="An offline, open-source trophy guide and tracker for Grand Theft Auto VI on PS5: all 55 official trophies, a platinum roadmap, missable warnings, and a spoiler-safe checklist.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Unofficial fan guide</p>
+    <h1>Leonida Trophy Atlas</h1>
+    <p class="lede">Every one of the 55 official trophies, a roadmap to the platinum, and a checklist that lives in your browser — no account, no network, no ads.</p>
+    <div class="stats" id="stats" aria-live="polite">
+      <div class="stat"><strong id="stat-earned">0</strong><span>earned of 55</span></div>
+      <div class="stat"><strong>1</strong><span>platinum</span></div>
+      <div class="stat"><strong>2</strong><span>gold</span></div>
+      <div class="stat"><strong>6</strong><span>silver</span></div>
+      <div class="stat"><strong>46</strong><span>bronze</span></div>
+      <div class="stat"><strong>28</strong><span>hidden</span></div>
+      <div class="stat"><strong>2</strong><span>missable</span></div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-bar"><div id="progress-fill" style="width:0%"></div></div>
+      <p id="progress-text">0 of 55 earned — 0%</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="roadmap" id="roadmap" aria-labelledby="roadmap-h">
+    <h2 id="roadmap-h">Platinum roadmap</h2>
+    <p class="section-note">Four phases, in order. The only things that can truly be lost are in phase 1 — everything else can be cleaned up after the story.</p>
+    <ol class="phases">
+      <li>
+        <h3>Phase 1 — Play the story, protect the missables</h3>
+        <p>Chapters 1–4 and the finale earn 13 story trophies on their own. Before you start: turn the spoiler shield on, and <strong>make a manual save at the start of every chapter</strong> — there is no mission replay and no second playthrough. Two trophies can be missed outright: <strong>Positive Mental Attitude</strong> (meditate at the Chapter 1 balcony spot — walk past it and it is gone) and <strong>Strangers &amp; Freaks</strong> (one timed step, Race Against Yago, in Chapter 3).</p>
+      </li>
+      <li>
+        <h3>Phase 2 — Strangers &amp; side strands</h3>
+        <p>Finish the eight stranger mission strands (Andy, Kenton, Billy, Randy, Tyrone, Bret and the rest) and the activities they open — fishing with Cal, hunting with Bret, the jewelry jobs that hand you the Snap Gun. This is also when to try every activity once for Master of None.</p>
+      </li>
+      <li>
+        <h3>Phase 3 — Money, property &amp; wheels</h3>
+        <p>Bank vaults open after the end-of-Chapter-4 mission “That’s Where The Money Is” (5 vaults for Maximum Withdrawal). Buy all 8 garages — about $160,000 — through the property app that opens after Daily Driver in Chapter 2, register 10 vehicles in the Scooter Bros app (after Moses), and launder marked bills toward the $250,000 Dime on the Dollar total.</p>
+      </li>
+      <li>
+        <h3>Phase 4 — Clean-up grinds</h3>
+        <p>After the story, mop up the counters: 250 stunts (100% completion wants 300), 42 gold Shooting Range medals, 14 Top Fun drone races, 100 vehicles discovered, 100 WAiNK spots, 3 card sets, 50 challenges, and full exploration of Leonida. Check the in-game stats screen against this list, then A Long Road and the platinum pop together.</p>
+      </li>
+    </ol>
+    <div class="missable-callout" role="note">
+      <h3>⚠ The two missables</h3>
+      <p><strong>Positive Mental Attitude</strong> — the first meditation spot is a balcony in Chapter 1. Miss it and the trophy is unobtainable in that playthrough.</p>
+      <p><strong>Strangers &amp; Freaks</strong> — the Chapter 3 step Race Against Yago is timed. Do it when it appears; there is no way to replay the chapter.</p>
+    </div>
+  </section>
+
+  <section class="tracker" aria-labelledby="tracker-h">
+    <h2 id="tracker-h">Trophy checklist</h2>
+    <div class="controls">
+      <label class="search">Search
+        <input id="q" type="search" placeholder="Name, description or guide…" autocomplete="off">
+      </label>
+      <label>Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <fieldset class="types">
+        <legend>Type</legend>
+        <div class="chips" id="type-chips">
+          <button type="button" data-type="all" class="chip active">All</button>
+          <button type="button" data-type="story" class="chip">Story</button>
+          <button type="button" data-type="missable" class="chip">Missable</button>
+          <button type="button" data-type="collectibles" class="chip">Collectibles</button>
+          <button type="button" data-type="activities" class="chip">Activities</button>
+          <button type="button" data-type="completion" class="chip">Completion</button>
+          <button type="button" data-type="online" class="chip">Online</button>
+        </div>
+      </fieldset>
+      <label class="toggle"><input id="spoiler" type="checkbox" checked> Hide spoilers — hidden trophies stay masked until earned</label>
+      <label class="toggle"><input id="earned-only" type="checkbox"> Earned only</label>
+      <div class="io">
+        <button id="export" type="button">Export progress (JSON)</button>
+        <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+        <button id="reset" type="button">Reset</button>
+      </div>
+    </div>
+    <p id="count-line" class="count-line" aria-live="polite"></p>
+    <div id="list" class="trophy-list"></div>
+    <p id="empty" class="empty" hidden>No trophies match these filters. Try clearing the search or picking another type.</p>
+    <p id="online-note" class="empty" hidden>This list has no online trophies — all 55 are earned in single-player. Online is listed so you can check that at a glance.</p>
+  </section>
+
+  <section class="sources" aria-labelledby="sources-h">
+    <h2 id="sources-h">Sources &amp; method</h2>
+    <p>Trophy names, descriptions and grades are quoted from the official PS5 list as published 18 Nov 2026: Exophase and PSNProfiles agree on every name, description and grade, cross-checked against Push Square, OutputLag, Keengamer and GTA Vice City Hub. Every guide on this page is written in the entrant’s own words — other guides were used as sources and are cited per trophy, never copied. Where a guide gives a specific place or step, its source is named on the card.</p>
+    <p class="fineprint">Unofficial fan guide. Not affiliated with, endorsed by, or connected to Rockstar Games or Take-Two Interactive. Grand Theft Auto is a trademark of Take-Two Interactive. This page loads nothing from the network: open <code>app/index.html</code> offline and it works. Your ticks are stored only in this browser (localStorage) and can be exported as JSON.</p>
+  </section>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,5 +1,8 @@
 # Leonida Trophy Atlas — GTA 6 Trophy Guide & Tracker
 
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/imusic-487/gta6-trophy-guide/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/imusic-487/gta6-trophy-guide/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 [![License: MIT](https://img.shields.io/github/license/imusic-487/gta6-trophy-guide)](LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/imusic-487/gta6-trophy-guide)](https://github.com/imusic-487/gta6-trophy-guide/commits/main)
 [![Trophies: 55 official](https://img.shields.io/badge/trophies-55%20official-brightgreen)](app/data/trophies.json)
